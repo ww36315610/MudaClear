@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17" started-at="2019-08-15T04:02:55Z" finished-at="2019-08-15T04:02:55Z">
+    <groups>
+    </groups>
+    <test name="testReport" duration-ms="17" started-at="2019-08-15T04:02:55Z" finished-at="2019-08-15T04:02:55Z">
+      <class name="com.muda.controller.platform.job.PlatformJobController">
+        <test-method status="PASS" signature="runnerT1()[pri:0, instance:com.muda.controller.platform.job.PlatformJobController@76908cc0]" name="runnerT1" duration-ms="6" started-at="2019-08-15T12:02:55Z" finished-at="2019-08-15T12:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runnerT1 -->
+        <test-method status="PASS" signature="runnerT2()[pri:0, instance:com.muda.controller.platform.job.PlatformJobController@76908cc0]" name="runnerT2" duration-ms="6" started-at="2019-08-15T12:02:55Z" finished-at="2019-08-15T12:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runnerT2 -->
+      </class> <!-- com.muda.controller.platform.job.PlatformJobController -->
+    </test> <!-- testReport -->
+  </suite> <!-- Suite -->
+</testng-results>

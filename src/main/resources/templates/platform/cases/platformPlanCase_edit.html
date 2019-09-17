@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="x-admin-sm" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加页面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi"/>
+    <link rel="stylesheet" href="../../layui/css/font.css">
+    <link rel="stylesheet" href="../../layui/css/xadmin.css">
+    <link rel="stylesheet" href="../../layui/css/mycss.css">
+    <link href="../../layui/css/layui.css" th:href="@{../../layui/css/layui.css}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="../../layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../layui/lay/myjs/xadmin.js"></script>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+<div class="ex1">
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label">CASE_ID：</label>
+            <div class="layui-input-block">
+                <input type="text" name="id" required lay-verify="required" placeholder="" autocomplete="off"
+                       class="layui-input" disabled="disabled">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">case名称：</label>
+            <div class="layui-input-block">
+                <input type="text" name="caseName" required lay-verify="required" placeholder="请输入计划名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择项目：</label>
+            <div class="layui-input-block">
+                <select id = "projectName" name="projectName" lay-verify="required" lay-filter="projectName">
+                    <option value="请选择projectName"></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择计划：</label>
+            <div class="layui-input-block">
+                <select id = "planName" name="planName" lay-verify="required" lay-filter="planName">
+                    <option value="请选择planName"></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">状态</label>
+            <div class="layui-input-block">
+                <!--<input type="checkbox" name="status" lay-skin="switch" value="{{d.id}}" th:if="${this.value ==1}" th:checked=${this.value}==1?true:false>-->
+                <input id="status" type="checkbox" value="1" name="status" lay-skin="switch" lay-text="开|关"
+                       lay-filter="switchDemo">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">操作者：</label>
+            <div class="layui-input-inline">
+                <input type="text" id="author" name="author" required lay-verify="required" placeholder="请输入操作者"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+            <div class="layui-form-mid layui-word-aux">后期做成直接显示登陆用户名称</div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">添加时间：</label>
+            <div class="layui-input-block">
+                <input type="text" name="updateTime" id="datetime" placeholder="请选择时间" lay-verify="required"
+                       class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注说明：</label>
+            <div class="layui-input-block">
+                <textarea name="message" placeholder="请输入内容" class="layui-textarea"></textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+layui.use(['form', 'layer','jquery','laydate'],function() {
+        $ = layui.jquery;
+        var form = layui.form,
+        layer = layui.layer;
+        var laydate = layui.laydate;
+        var beforeURL = "/muda/patformPlanCase";
+
+        //自定义验证规则
+        form.verify({
+            lengthInput: function(value) {
+                if (value.length < 5) {
+                    return '文本框不少于5个字符啊';
+                }
+                if (value.length > 50) {
+                    return '文本框不超过50个字符啊';
+                }
+            },
+            pass: [/(.+){6,12}$/, '密码必须6到12位'],
+            repass: function(value) {
+                if ($('#L_pass').val() != $('#L_repass').val()) {
+                    return '两次密码不一致';
+                }
+            }
+        });
+
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+            console.log('-=-'+JSON.stringify(data.field));
+            $.ajax({
+                url: beforeURL+'/update',
+                type : 'post',
+                dataType: 'text',
+                contentType: 'application/json;charset=utf-8',
+                data: JSON.stringify(data.field),
+                success : function (data1) {
+                    layer.alert("修改成功",{icon: 6},
+                    function() {
+                         //关闭当前frame
+                         xadmin.close();
+                         // 可以对父窗口进行刷新
+                         xadmin.father_reload();
+                 });
+                }
+            });
+            return false;
+        });
+
+        //监听指定开关
+        form.on('switch(switchDemo)', function(obj){
+            var checkedNO = obj.elem.checked?1:0;
+            $('#status').attr("value",checkedNO)
+            return false;
+         });
+
+        //日期时间选择器
+         laydate.render({
+            elem: '#datetime'
+            , type: 'datetime'
+         });
+
+       //动态获取下拉菜单内容
+        $.ajax({
+            url:'/muda/patformProject/findByProjectName',
+            dataType:'json',
+            type:'post',
+            async : false,//改为同步
+            success:function(data){
+                $.each(data,function(item,index){
+                	$('#projectName').append(new Option(item,item));//往下拉菜单里添加元素
+            	})
+            form.render("select");//菜单渲染 把内容加载进去
+            }
+        });
+
+        form.on('select(projectName)',function(obj){
+            //动态获取下拉菜单内容
+            var params=$('#projectName').serialize();
+            console.log('--000-::'+params);
+            $.ajax({
+                url:'/muda/patformPlan/findByPlanNameLianDong',
+                type:'post',
+                cache:false,
+                dataType: "json",
+                data:params,
+                success:function(data){
+                    $('#planName').empty(); //清空下拉菜单
+                    $.each(data,function(item,index){
+                	    $('#planName').append(new Option(item,item));//往下拉菜单里添加元素
+            	    })
+            	    form.render("select");//菜单渲染 把内容加载进去
+                }
+           });
+        });
+
+
+    });
+</script>
+</body>
+</html>
+
