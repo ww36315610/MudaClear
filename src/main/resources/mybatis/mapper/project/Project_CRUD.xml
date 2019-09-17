@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muda.dao.project.ProjectDao">
+
+    <select id="get" resultType="com.muda.beans.project.Project">
+        select * from project where project_name LIKE CONCAT('%',#{projectName},'%')
+    </select>
+
+    <select id="findAll" resultType="com.muda.beans.project.Project">
+        SELECT * from project
+        <where>
+            <if test="id != null and id !=''">id = #{id}</if>
+            <if test="projectName !=null and projectName != ''">and project_name = #{projectName}</if>
+            <if test="caseCode !=null and caseCode != ''">and case_code = #{caseCode}</if>
+            <if test="status !=null and status != ''">and status = #{status}</if>
+            <if test="mockAdress !=null and mockAdress != ''">and mock_adress = #{mockAdress}</if>
+            <if test="author !=null and author != ''">and author = #{author}</if>
+            <if test="updateTime != null and updateTime !=''">and update_time = #{updateTime}</if>
+        </where>
+    </select>
+
+    <select id="findByPage" resultType="com.muda.beans.project.Project">
+        SELECT * from project
+    </select>
+
+
+    <!--<select id="get" resultType="com.muda.beans.project.Project">-->
+        <!--select * from project where project_name = #{projectName}-->
+        <!--select * from project where project_name like "%#{projectName,jdbcType=VARCHAR}%"-->
+    <!--</select>-->
+
+    <!--<insert id="insert" parameterType="com.muda.beans.Employee" useGeneratedKeys="true" keyProperty="id">-->
+    <!--INSERT into project(project_name,case_code,status,mock_adress,author,update_time,msg) -->
+    <!--VALUES(#{last_name,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR},#{gender,jdbcType=VARCHAR},#{birth,jdbcType=VARCHAR},#{department_id,jdbcType=VARCHAR})-->
+    <!--</insert>-->
+
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO project(project_name,case_code,status,mock_adress,author,update_time,message)
+        VALUES(#{projectName},#{caseCode},#{status},#{mockAdress},#{author},#{updateTime},#{message})
+    </insert>
+
+    <update id="update">
+        UPDATE project
+        <set>
+            <if test="projectName !=null">project_name = #{projectName},</if>
+            <if test="caseCode !=null">case_code = #{caseCode},</if>
+            <if test="status !=null">status = #{status},</if>
+            <if test="mockAdress !=null">mock_adress = #{mockAdress},</if>
+            <if test="author !=null">author = #{author},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="message != null">message = #{message}</if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="delete">
+        DELETE from project WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteSome">
+        DELETE from project WHERE id in
+        <foreach collection="array" item="ids" open="(" separator="," close=")">
+            #{ids}
+        </foreach>
+    </delete>
+
+</mapper>

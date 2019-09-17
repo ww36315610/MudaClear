@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muda.dao.cases.CaseDao">
+
+    <select id="get" resultType="com.muda.beans.cases.Case">
+    select * from `case` where case_name LIKE CONCAT('%',#{caseName},'%')
+    </select>
+
+    <select id="findByPage" resultType="com.muda.beans.cases.Case">
+        SELECT * from `case`
+    </select>
+
+
+    <!-- 用于查询caseName -->
+    <select id="findByCaseName" resultType="java.lang.String">
+        select DISTINCT(case_code) as caseCode from `case`;
+    </select>
+
+    <!-- 用于查询case数量 -->
+    <select id="findCount" resultType="java.lang.Integer">
+        SELECT count(case_name) from `case` where `status` =1;
+    </select>
+
+
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `case`(case_name,case_code,status,sortNO,author,update_time,message,project_id)
+        VALUES(#{caseName},#{caseCode},#{status},#{sortNO},#{author},#{updateTime},#{message},#{projectId})
+    </insert>
+
+    <update id="update">
+    UPDATE `case`
+    <set>
+    <if test="caseName !=null">case_name = #{caseName},</if>
+    <if test="caseCode !=null">case_code = #{caseCode},</if>
+    <if test="status !=null">status = #{status},</if>
+    <if test="sortNO !=null">sortNO = #{projectId},</if>
+    <if test="author !=null">author = #{author},</if>
+    <if test="updateTime != null">update_time = #{updateTime},</if>
+    <if test="message != null">message = #{message},</if>
+    <if test="projectId != null">project_id = #{projectId}</if>
+    </set>
+    where id = #{id}
+    </update>
+
+
+    <delete id="delete">
+        DELETE from `case` WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteSome">
+        DELETE from `case` WHERE id in
+        <foreach collection="array" item="ids" open="(" separator="," close=")">
+            #{ids}
+        </foreach>
+    </delete>
+
+</mapper>
