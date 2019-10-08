@@ -47,6 +47,7 @@ public class MudaProjectController {
         try {
             mudaProjectList = mudaProjectService.get(pageNum, pageSize, projectName);
             PageInfo<MudaProject> pageInfo = new PageInfo<>(mudaProjectList);
+            System.out.println(mudaProjectList.size());
             pageInfo.setCode(200);
             return JSON.toJSONString(pageInfo);
         } catch (Exception e) {

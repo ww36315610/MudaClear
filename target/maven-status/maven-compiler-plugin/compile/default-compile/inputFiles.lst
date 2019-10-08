@@ -65,6 +65,7 @@
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/utils/file/OrderedProperties.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/utils/http/HttpClientImp.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/controller/get_girl/GetGirlController.java
+/Users/apple/Workspaces/MudaClear/src/main/java/com/muda/shiro/bean/SysRole.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/utils/thread/ThreadPoolUtils.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/service/platform/job/PlatformJobService.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/utils/listenter/ExtentTestNGIReporterListener.java
@@ -78,6 +79,7 @@
 /Users/apple/Workspaces/MudaClear/src/main/java/SpringBootGo.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/utils/file/CaseForAaync.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/service/cases/CaseService.java
+/Users/apple/Workspaces/MudaClear/src/main/java/com/muda/shiro/bean/SysPermission.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/controller/upload/UploadController.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/service/muda_project/Imp/MudaProjectServiceImpl.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/utils/file/PropersTools.java
@@ -87,3 +89,4 @@
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/beans/muda_project/MudaProject.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/utils/db/MysqlOperation.java
 /Users/apple/Workspaces/MudaClear/src/main/java/com/muda/service/platform/plan/Imp/PlatformPlanServiceImpl.java
+/Users/apple/Workspaces/MudaClear/src/main/java/com/muda/shiro/bean/UserInfo.java

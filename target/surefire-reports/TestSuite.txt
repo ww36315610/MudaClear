@@ -1,4 +1,236 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.274 sec - in TestSuite
+Tests run: 29, Failures: 29, Errors: 0, Skipped: 0, Time elapsed: 109.795 sec <<< FAILURE! - in TestSuite
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.741 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.742 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.743 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.743 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.743 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.743 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.743 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.743 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.743 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.089 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.089 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.052 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.052 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.062 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.072 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.089 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.091 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.091 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.109 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+
+testMethod(com.muda.controller.platform.job.PlatformJobController)  Time elapsed: 0.149 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+

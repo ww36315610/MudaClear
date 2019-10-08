@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入 echarts.js -->
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <!-- 引入jquery.js -->
+    <script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="myChart" style="width: 600px;height:400px;"></div>
+
+<script src="../layui/layui.js"></script>
+
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('myChart'));
+
+    //设置等待加载……
+    myChart.showLoading();
+
+    // 异步加载数据
+    $.get('http://api.lwpoor.cn/echarts/getjson').done(function (resule) {
+        //resule = JSON.parse(resule);//把string字符串转换为json数组
+        myChart.hideLoading();
+        myChart.setOption({
+            xAxis: {
+                data: resule.Result.name
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: resule.Result.value
+            }]
+        });
+    });
+
+</script>
+
+</body>
+</html>

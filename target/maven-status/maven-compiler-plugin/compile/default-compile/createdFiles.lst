@@ -77,10 +77,13 @@ com/muda/service/get_girl/OauthsService.class
 com/muda/druidSource/autoconfigure/DruidDataSourceAutoConfigure$1.class
 com/muda/beans/Employee.class
 com/muda/druidSource/config/DbConfig.class
+com/muda/shiro/bean/SysPermission.class
 com/muda/dao/platform/project/PlatformProjectDao.class
 com/muda/controller/result/ResultController.class
+com/muda/shiro/bean/UserInfo.class
 com/muda/controller/platform/job/PlatformJobController.class
 com/muda/dao/cases/CaseDao.class
+com/muda/shiro/bean/SysRole.class
 com/muda/druidSource/autoconfigure/DruidStatProperties$StatViewServlet.class
 com/muda/beans/muda_project/MudaProject.class
 com/muda/druidSource/autoconfigure/DruidSpringAopConfiguration.class

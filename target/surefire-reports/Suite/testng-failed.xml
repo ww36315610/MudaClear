@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="0" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.muda.utils.listenter.RetryListener"/>
+    <listener class-name="com.muda.utils.listenter.TestngListener"/>
+    <listener class-name="com.muda.utils.listenter.ExtentTestNGIReporterListener"/>
+    <listener class-name="com.muda.utils.listenter.ExtentTestNGIPreporterListenerNew"/>
+  </listeners>
+  <test name="testAsync(failed)" parallel="methods">
+    <classes>
+      <class name="com.muda.controller.platform.job.PlatformJobController">
+        <methods>
+          <include name="testMethod" invocation-numbers="5 1 6 8 7 2 4 3 9 0 9 1 10 4 3 2 5 7 6 8 11 12 13 15 18 19 16 17 14"/>
+        </methods>
+      </class> <!-- com.muda.controller.platform.job.PlatformJobController -->
+    </classes>
+  </test> <!-- testAsync(failed) -->
+</suite> <!-- Failed suite [Suite] -->

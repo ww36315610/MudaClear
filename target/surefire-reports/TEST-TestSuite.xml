@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.013" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="0.741" tests="29" errors="0" skipped="0" failures="29">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Users/apple/apache/java8/Contents/Home/jre/lib"/>
@@ -42,7 +42,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Users/apple/apache/java8/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -58,6 +58,427 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="runnerT2" classname="com.muda.controller.platform.job.PlatformJobController" time="0.006"/>
-  <testcase name="runnerT1" classname="com.muda.controller.platform.job.PlatformJobController" time="0.007"/>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.741">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[line
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mmain&amp#27;[0;39m | &amp#27;[1;32mcom.muda.controller.platform.job.PlatformJobController&amp#27;[0;39m | createDbConnection.create(jdbc:mysql://10.10.28.5:3306/wj_test?useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false),before
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mmain&amp#27;[0;39m | &amp#27;[1;32mcom.muda.controller.platform.job.PlatformJobController&amp#27;[0;39m | createDbConnection.create(jdbc:mysql://10.10.28.5:3306/wj_test?useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false),before
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mmain&amp#27;[0;39m | &amp#27;[1;32mcom.muda.controller.platform.job.PlatformJobController&amp#27;[0;39m | createDbConnection.create(jdbc:mysql://10.10.28.5:3306/wj_test?useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false),after
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mmain&amp#27;[0;39m | &amp#27;[1;32mcom.muda.controller.platform.job.PlatformJobController&amp#27;[0;39m | createDbConnection.create(jdbc:mysql://10.10.28.5:3306/wj_test?useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false),after
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mmain&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | maxRunCount=2
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mmain&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | maxRunCount=2
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:38 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngRetry&amp#27;[0;39m | retire:::running retry for 'testMethod' on class com.muda.utils.listenter.TestngRetry Retrying 1 times
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.742">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.743">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.743">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.743">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.743">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.743">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.743">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.743">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.005">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.089">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.089">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.014">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.006">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.002">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-4&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.005">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.005">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.001">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.001">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.002">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Start
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.052">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-8&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.052">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-1&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.062">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-9&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.072">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-0&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.089">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-3&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.091">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-5&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.091">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.109">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-2&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-6&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="com.muda.controller.platform.job.PlatformJobController" time="0.149">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.muda.controller.platform.job.PlatformJobController.testMethod(PlatformJobController.java:143)
+</failure>
+    <system-out><![CDATA[2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+2019-09-27 18:32:39 | &amp#27;[34mINFO &amp#27;[0;39m | &amp#27;[1;33mPoolService-7&amp#27;[0;39m | &amp#27;[1;32mcom.muda.utils.listenter.TestngListener&amp#27;[0;39m | testMethod Failure
+]]></system-out>
+  </testcase>
 </testsuite>

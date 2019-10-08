@@ -26,8 +26,10 @@ public class ProjectController {
             } else {
                 projectPages = projectService.get(pageNum, pageSize, projectName);
             }
+            System.out.println("+++++"+projectPages.size());
             PageInfo<Project> pageInfo = new PageInfo<>(projectPages);
             pageInfo.setCode(200);
+            System.out.println("----"+projectPages.size());
             return JSON.toJSONString(pageInfo);
         } catch (Exception e) {
             List<Project> errorList = Lists.newArrayList();
