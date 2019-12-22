@@ -167,9 +167,9 @@ public class CaseMysqlController {
      * @param
      * @return
      */
+    @ResponseBody
     @RequestMapping("/addExcellList")
-    public @ResponseBody
-    String addExcellList(List<Map<String, Object>> caseMysqlList) {
+    public String addExcellList(List<Map<String, Object>> caseMysqlList) {
         String sql = "insert into case_mysql(case_name,case_code,status,sortNO) VALUES(?,?,?,?)";
         List<Object[]> list = Lists.newArrayList();
         caseMysqlList.forEach(m -> {
